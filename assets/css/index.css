@@ -1,0 +1,415 @@
+/* roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* body and header css */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header .navbar-light .nav-link{
+    font-size: 18px;
+    color: #000!important;
+}
+
+.blue-background{
+    height: 2094px;
+}
+
+@media(max-width:1920px){
+    .blue-background{
+        width: 595px;z-index: -2;background-color: #9806FF;
+    }
+    .darkblue-background{
+        height: 490px;width: 570px;z-index: -2;background-color: #6A07B0;right: 10%; ; 
+    }
+    .navbar-light .nav-link.login-text{
+        color: #fff!important;
+    }
+}
+@media(max-width:1366px){
+    .blue-background{
+       width: 290px;z-index: -2;background-color: #9806FF;
+    }   
+    .darkblue-background{
+        display: none;
+   }
+   .navbar-light .nav-link.login-text{
+        color: #fff!important;
+    }
+}
+@media(max-width:768px){
+    .blue-background{
+       width: 290px;z-index: -2;background-color: #9806FF;
+    }   
+    .darkblue-background{
+        display: none;
+   }
+   .navbar-light .nav-link.login-text{
+        color: #000!important;
+    }
+    path{
+        fill: #000;;
+    }
+}
+@media(max-width:576px){
+    .blue-background{
+       width: 290px;z-index: -2;background-color: #9806FF;
+    }   
+    .darkblue-background{
+        display: none;
+   }
+   .navbar-light .nav-link.login-text{
+        color: #000!important;
+    }
+}
+@media(max-width:375px){
+    .blue-background{
+       min-height: 2094px;width: 90px;z-index: -2;background-color: #9806FF;
+    }
+    .darkblue-background{
+        display: none;
+   }
+}
+
+
+
+/* common css */
+.text-skyblue{
+    color: #55B9FF;
+}
+.arrow-link{
+    color:#55B9FF ;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.arrow-link::after{
+    content: '';
+    margin-left: 8px;
+    height: 36px;
+    width: 36px;
+    background: url('../images/arrow-right.png');
+}
+.arrow-link:hover{
+    color:#55B9FF ;
+}
+
+
+/* slider css */
+.mycarousel .carousel-item h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 82px;
+    text-transform: uppercase;
+}
+@media(max-width:576px){
+    .mycarousel .carousel-item h1{
+        font-size: 50px;
+    }
+}
+.mycarousel .carousel-item h4{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46px; 
+}
+.slider-btn{
+    border-radius: 0px;
+}
+
+.slider-btn:focus{
+    box-shadow: none!important;
+}
+.mycarousel .carousel-item button{
+    background-image: linear-gradient(90deg, #9A00FF 0%, #55B9FF 100%);
+    font-size: 20px;
+    color: #fff;
+    padding: 18px 30px;
+    margin-top: 48px;
+}
+.myindicators{
+    justify-content: flex-start;
+    margin-left: 0%
+}
+.myindicators.carousel-indicators [data-bs-target]{
+    height: 12px;
+    width: 12px;
+    border: 1px solid #9A00FF!important;
+    border-radius: 50%;
+}
+.myindicators.carousel-indicators [data-bs-target].active{
+    background-color: #9A00FF!important;
+}
+
+
+/* service css */
+.services{
+    background-image: url(../images/services-bg.png);
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position-y: bottom;
+    background-position-x: left;
+}
+.service-bg{
+    display: none;
+}
+@media (max-width:992px){
+    .services{
+       background-image: url();
+    }
+    .service-bg{
+        display: block;
+    }
+}
+@media (max-width:1024px){
+    .services{
+        background-position-y: bottom;
+        background-size: 70%;
+        background-position-x: left;
+    }
+}
+@media (max-width:1366px){
+    .services{
+        background-position-y: bottom;
+        background-size: 60%;
+        background-position-x: left;
+    }
+}
+.service-title{
+    margin-bottom: 70px;
+}
+.service-title h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #000;
+}
+.service-title h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #7D8892;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.service-card{
+    display: flex;
+    margin-bottom: 48px;
+}
+.service-card .service-img{
+    height: 56px;
+    width: 56px;
+    margin-right: 35px;
+}
+.service-card .service-content h1{
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+.service-card .service-content label{
+    font-size: 18px;
+    font-weight: 400;
+    color: #7D8892;
+}
+
+
+/* latest update */
+.latest-update h3{
+    font-size: 24px;
+    color: #7D8892;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.latest-update h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+.latest-update h2{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.latest-update label, .latest-update span{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.latest-update label{
+    color: #000;
+}
+.latest-update span{
+    color: #ccc;
+}
+
+
+/* card css */
+.mycard h1{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.mycard label, .mycard span{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.mycard label{
+    color: #000;
+}
+.mycard span{
+    color: #ccc;
+}
+
+
+/* live chat css */
+.live-chat{
+    background: linear-gradient(102.04deg, #F59F50 23.56%, #FF00D4 172.12%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+.live-chat-man-container{
+    margin-top: -75px;
+}
+.live-chat .live-chat-man{
+    display: block;
+    margin: 0px auto;
+}
+.live-chat label{
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 28px;
+    font-weight: 500;
+    color: #000;
+}
+.live-chat h1{
+    font-size: 40px;
+    line-height: 46px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 12px;
+}
+.live-chat p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 36px;
+}
+.live-chat button{
+    color: #F59F50;
+    background-color: #fff;
+    padding: 18px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0px;
+    margin-top: 52px;
+}
+.live-chat button:hover{
+    color: #F59F50;
+}
+.live-chat button:focus{
+    box-shadow: none;
+}
+
+
+
+/* drone videography */
+.drone-videography label{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #7D8892;
+    text-transform: uppercase;
+}
+.drone-videography h1{
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+}
+.drone-videography p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.drone-videography a{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 43px;
+    text-decoration: none;
+}
+.thumbnail-whitespace{
+    height: 80%;
+    width: 15%;
+    background-color:#fff;
+    position:absolute;
+    left: -1px;
+    bottom: -1px;
+}
+.play-button{
+    height: 72px;
+    width: 72px;
+    background-image: url('../images/play-button.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* icg certified */
+.icgcertified{
+    background-color: #0d66f1ed;
+    background-image: url('../images/icg-certified.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 58px;
+}
+.icgcertified a{
+    display: block;
+    text-decoration: none;
+    color: #8ae3ff;
+}
+
+.icgcertified a:hover{
+    color: #8ae3ff;
+}
+
+
+
+/* footer css */
+footer .footer-label{
+    font-size: 20px;
+    font-weight: 500;
+}
+footer .footer-item{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+footer a.footer-item{
+    display: block;
+    text-decoration: none;
+}
+.plaxonic-link{
+    text-decoration: none;
+}
+.plaxonic-link:hover{
+    color: #55B9FF;
+}
